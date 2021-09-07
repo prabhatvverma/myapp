@@ -1,7 +1,5 @@
 package in.kodecamp;
 
-//import java.util.*;
-
 public class CollectionTest {
 
     private int count = 0;
