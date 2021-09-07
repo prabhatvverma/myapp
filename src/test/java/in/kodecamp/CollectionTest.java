@@ -36,8 +36,6 @@ public class CollectionTest {
         @Override
         public boolean equals(Object obj) {
             Person p = (Person)obj;
-            // System.out.println("......Equals called.....");
-            //return this.id == p.id;
             return this.name.equals(p.name) && this.id == p.id && this.address.equals(p.address);  
         }
 
