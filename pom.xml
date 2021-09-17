@@ -60,6 +60,7 @@
             <excludes>
                 <exclude>**/*SqlTest.java</exclude>
                 <exclude>**/*TestPlayGround.java</exclude>
+                <exclude>**/*CollectionTest.java</exclude>
             </excludes>
         </configuration>
       </plugin>

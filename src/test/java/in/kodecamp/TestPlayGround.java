@@ -2,7 +2,7 @@ package in.kodecamp;
 
 import static in.kodecamp.commons.Logger.log;
 
-import java.util.*;
+import java.util.List;
 
 import in.kodecamp.entities.Course;
 import in.kodecamp.entities.CourseImpl;
@@ -26,7 +26,6 @@ public class TestPlayGround {
 
         // person object
         Person p = new PersonImpl("uu100", "Golu", "Kanpur");
-
         String uuid = p.uuid();
         // log("uuid", uuid);
         String name = p.name();
@@ -106,12 +105,12 @@ public class TestPlayGround {
     public void testStudentMarks() {
         log("start: TestPlayGround ", "testStudentsMarks");
 
-        StudentMarks s = new StudentMarksImpl("Golu", "BTech", "fifth",marks( ArrayList<Integer> marks){marks.add (1); marks.add (20); });
+        StudentMarks s = new StudentMarksImpl("Golu", "BTech", "fifth", null);
 
         String name = s.name();
         String course = s.course();
         String semester = s.semester();
-        List<Integer> marks = s.marks() ;
+        // List<Integer> marks = s.marks() ;
 
         assert name.equals("Golu"): "Actual name does not match to expected name";
         assert course.equals("BTech"): "Actual address does not match to expected address";
