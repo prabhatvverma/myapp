@@ -56,5 +56,9 @@ public class PersonTest{
 
         boolean isFound = people.contains(myPerson);  
         System.out.println("isFound  : " +isFound);
+        int index = people.indexOf(myPerson);
+        System.out.println("Index found at : " + index);
+        Person foundObj = people.get(index);
+        System.out.println("Found obj :"+foundObj);
     }
 }
