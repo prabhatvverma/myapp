@@ -41,7 +41,7 @@ public class PersonImpl implements Person {
 
   @Override
   public String toString() {
-    String PersonString = "[uuid= " + uuid + " name : " + name + " Address : " + address + " ]";
+    String PersonString = "[uuid= " + uuid + " name : " + name + " Address : " + address + "]\r\n";
     return PersonString;
   }
 
@@ -51,7 +51,7 @@ public class PersonImpl implements Person {
       return false;
     }
     PersonImpl obj = (PersonImpl) onotherObject;
-    System.out.print("------------Equals");
+    System.out.print("------------Equals \r\n"  );
     if (obj.uuid.equals(uuid)) {
       return true;
     }

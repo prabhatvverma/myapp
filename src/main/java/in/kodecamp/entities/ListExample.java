@@ -8,7 +8,7 @@ public class ListExample {
         List<Person> people = new ArrayList<>();
         Person p = null;
         for (int i = 0; i < noOfItems; i++) {
-            p = new PersonImpl("uuid_" + (i + 1), "Name__" + (i + 1), "Address_" + (i + 1));
+            p = new PersonImpl("uuid_" + (i + 1), "Name_" + (i + 1), "Address_" + (i + 1));
             people.add(p);
         }
         return people;
