@@ -8,6 +8,7 @@ public class PersonImpl implements Person {
   private String uuid;
   private String name;
   private String address;
+
   /**
    *
    */
@@ -17,6 +18,15 @@ public class PersonImpl implements Person {
     this.address = address;
   }
 
+  @Override
+  public String name() {
+    return this.name;
+  }
+
+  @Override
+  public String uuid() {
+    return this.uuid;
+  }
 
   @Override
   public String address() {
@@ -30,14 +40,22 @@ public class PersonImpl implements Person {
   }
 
   @Override
-  public String name() {
-    return this.name;
+  public String toString() {
+    String PersonString = "[uuid= " + uuid + " name : " + name + " Address : " + address + " ]";
+    return PersonString;
   }
 
   @Override
-  public String uuid() {
-    return this.uuid;
+  public boolean equals(Object onotherObject) {
+    if (!(onotherObject instanceof Person)) {
+      return false;
+    }
+    PersonImpl obj = (PersonImpl) onotherObject;
+    System.out.print("------------Equals");
+    if (obj.uuid.equals(uuid)) {
+      return true;
+    }
+    return false;
   }
-
 
 }
