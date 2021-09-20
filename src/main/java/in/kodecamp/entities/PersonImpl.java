@@ -52,10 +52,11 @@ public class PersonImpl implements Person {
     }
     PersonImpl obj = (PersonImpl) onotherObject;
     System.out.print("------------Equals \r\n"  );
-    if (obj.uuid.equals(uuid)) {
-      return true;
-    }
-    return false;
+    // if (obj.uuid.equals(uuid)) {
+    //   return true;
+    // }
+    // return false;
+    return obj.uuid.equals(this.uuid)? true : false;
   }
 
 }

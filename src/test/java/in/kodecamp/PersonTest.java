@@ -9,8 +9,8 @@ import in.kodecamp.entities.ListExample;
 import in.kodecamp.entities.Person;
 import in.kodecamp.entities.PersonImpl;
 
-public class PersonTest{
-    
+public class PersonTest {
+
     static final int NO_OF_ITEMS = 100000;
 
     // public void setup() {
@@ -45,20 +45,20 @@ public class PersonTest{
         assert true;
     }
 
-    public void testList(){
+    public void testList() {
         List<Person> people = ListExample.createList(10);
-        PersonImpl myPerson = new PersonImpl("uuid_5", "prabhat","lakhimpur");
+        PersonImpl myPerson = new PersonImpl("uuid_5", "prabhat", "lakhimpur");
         System.out.println(people);
-        System.out.println("SizeOf  :"+people.size());
-        System.out.println("IsEmpty  : "+people.isEmpty());
+        System.out.println("SizeOf  :" + people.size());
+        System.out.println("IsEmpty  : " + people.isEmpty());
 
         people.contains(myPerson);
 
-        boolean isFound = people.contains(myPerson);  
-        System.out.println("isFound  : " +isFound);
+        boolean isFound = people.contains(myPerson);
+        System.out.println("isFound  : " + isFound);
         int index = people.indexOf(myPerson);
         System.out.println("Index found at : " + index);
         Person foundObj = people.get(index);
-        System.out.println("Found obj :"+foundObj);
+        System.out.println("Found obj :" + foundObj);
     }
 }

@@ -3,8 +3,6 @@ package in.kodecamp.collection;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.lang.model.element.Element;
-
 public class ListExample {
     static public List<Person> createList(int noOfItems) {
         List<Person> people = new ArrayList<>();
