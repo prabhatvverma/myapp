@@ -3,7 +3,7 @@ package in.kodecamp.entities;
 /**
  * PersonImpl
  */
-public class PersonImpl implements Person {
+public class PersonImpl implements Person, Comparable<Person> {
 
   private String uuid;
   private String name;
@@ -41,7 +41,7 @@ public class PersonImpl implements Person {
 
   @Override
   public String toString() {
-    String PersonString = "[uuid= " + uuid + " name : " + name + " Address : " + address + "]\r\n";
+    String PersonString = "\r[uuid= " + uuid + " name : " + name + " Address : " + address + "]\r\n";
     return PersonString;
   }
 
@@ -51,12 +51,21 @@ public class PersonImpl implements Person {
       return false;
     }
     PersonImpl obj = (PersonImpl) onotherObject;
-    System.out.print("------------Equals \r\n"  );
+    System.out.print("------------Equals \r\n");
     // if (obj.uuid.equals(uuid)) {
-    //   return true;
+    // return true;
     // }
     // return false;
-    return obj.uuid.equals(this.uuid)? true : false;
+    return obj.uuid.equals(this.uuid) ? true : false;
   }
+
+  @Override
+  public int compareTo(Person o) {
+    String thisUuid = String.valueOf(this.uuid);
+    String otherUuid = String.valueOf(o.uuid());
+    return thisUuid.compareTo(otherUuid);
+    // return String.valueOf(this.uuid).compareTo(String.valueOf(o.uuid));
+  }
+
 
 }

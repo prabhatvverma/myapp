@@ -37,4 +37,10 @@ public class PersonMockImpl implements Person {
   }
 
 
+  @Override
+  public int compareTo(Person o) {
+    return 0;
+  }
+
+
 }

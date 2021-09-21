@@ -57,4 +57,10 @@ public class StudentImpl implements Student {
         return college;
     }
 
+    @Override
+    public int compareTo(Person o) {
+       
+        return 0;
+    }
+
 }

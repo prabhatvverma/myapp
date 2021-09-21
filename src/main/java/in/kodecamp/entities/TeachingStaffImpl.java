@@ -60,4 +60,10 @@ public class TeachingStaffImpl implements TeachingStaff {
         return designation;
     }
 
+    @Override
+    public int compareTo(Person o) {
+        
+        return 0;
+    }
+
 }

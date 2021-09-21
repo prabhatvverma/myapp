@@ -2,8 +2,6 @@ package in.kodecamp;
 
 import static in.kodecamp.commons.Logger.log;
 
-import java.util.List;
-
 import in.kodecamp.entities.Course;
 import in.kodecamp.entities.CourseImpl;
 import in.kodecamp.entities.Person;
@@ -98,7 +96,7 @@ public class TestPlayGround {
         // assert subjects.equals(new String[] { "java" }) : "Actual subjects does not
         // match the expected subjects";
 
-        log("end  : TestPlayGround : ", "testCourse");
+    log(subjects+ "end  : TestPlayGround : ", "testCourse");
 
     }
 

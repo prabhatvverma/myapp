@@ -1,6 +1,7 @@
 package in.kodecamp;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -46,7 +47,7 @@ public class PersonTest {
     }
 
     public void testList() {
-        List<Person> people = ListExample.createList(10);
+        List<Person> people = ListExample.createList(20);
         PersonImpl myPerson = new PersonImpl("uuid_5", "prabhat", "lakhimpur");
         System.out.println(people);
         System.out.println("SizeOf  :" + people.size());
@@ -60,5 +61,8 @@ public class PersonTest {
         System.out.println("Index found at : " + index);
         Person foundObj = people.get(index);
         System.out.println("Found obj :" + foundObj);
+
+        Collections.sort(people);
+        System.out.println(people);
     }
 }

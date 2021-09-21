@@ -1,7 +1,7 @@
 package in.kodecamp.entities;
 
 
-public interface Person {
+public interface Person extends Comparable<Person> {
   // method prototypes
   public String uuid();
   public String name();
